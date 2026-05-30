@@ -1,0 +1,53 @@
+:root{
+    --bg-main: #fff;
+    --txt-main: #87CEEB;
+}
+
+body {
+    background-color: var(--txt-main);
+    color: var(--bg-main);
+
+}
+.navbar {
+    background-color: var(--bg-main);
+    color: var(--txt-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 100px;
+}
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.forms {
+    border: 2px solid black;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.button {
+    width: 100%;
+    background-color: var(--bg-main);
+    color: var(--txt-main);
+    border-radius: 10px;
+    transition:  0.3s ease;
+}
+
+.button:hover {
+    background-color: rgb(139, 124, 124);
+    transform: translateY(-5px);
+    
+}
+
+.forms input  {
+    width: 100%;
+    margin: 4px;
+    border-radius: 10px;
+}
+
+
+           
