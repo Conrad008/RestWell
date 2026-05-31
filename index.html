@@ -5,51 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>restwell | dashboard</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        :root{
-            --bg-main: #fff;
-            --txt-main: #87CEEB;
-
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="navbar">
-        <h1>restwell</h1>
-        <nav class="nav-links">
-            <a href="#registration">join</a>
-            <a href="#motivation">motivation</a>
-        </nav>
+        <h1 class="text-3xl font-bold">Restwell</h1>
     </header>
-    <section id="registration">
+    <main>
+         <section id="registration" class="form">
         <form action="/submit-data" method="post">
-            <fieldset>
-                <legend>enter your details</legend>
-                <div class="form">
+            <fieldset class="forms">
+                <h2 class="text-xl font-bold">enter your details</h2>
+                <div class="font-bold" >
                     <label for="name">your first name</label> 
                     <input type="text" id="name" required placeholder="jane/john">
-                </div>
-                <div class="form">
+                </div> <br>
+                <div class="form2 font-bold">
                     <label for="name">your last name</label>
                     <input type="text" id="name" required placeholder="doe">
-                </div>
-                <div class="form">
+                </div> <br>
+                <div class="form3 font-bold">
                     <label for="DOB">enter your date of birth</label>
                     <input type="number" id="DOB" required min="1" max="100">
-                </div>
+                </div> <br>
                 <button class="button" type="submit">
                     submit
                 </button>
             </fieldset>
         </form>
     </section>
-    <section id="motivation">
-        <div id="dashboardOutput" class="greetings">
-            <h2 id="greeting">welcome</h2>
-            <p id="AgeInMonths"></p>
-        </div>
-
-    </section>
-
+    <div id="dashboardOutput" class="hidden space-y-6">
+        <section class="">
+                <h2 id="greeting" class="text-2xl font-bold"></h2>
+                <p id="ageInMonths" class="mt-2 font-medium"></p>
+            </section>
+    </div>
+    </main>
 </body>
 </html>
