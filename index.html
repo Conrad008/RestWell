@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>restwell | dashboard</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,20 +12,20 @@
     </header>
     <main>
          <section id="registration" class="form">
-        <form action="/submit-data" method="post">
+        <form id="userform">
             <fieldset class="forms">
                 <h2 class="text-xl font-bold">enter your details</h2>
                 <div class="font-bold" >
                     <label for="name">your first name</label> 
-                    <input type="text" id="name" required placeholder="jane/john">
+                    <input type="text" id="Name" required placeholder="jane/john">
                 </div> <br>
                 <div class="form2 font-bold">
                     <label for="name">your last name</label>
-                    <input type="text" id="name" required placeholder="doe">
+                    <input type="text" id="Name" required placeholder="doe">
                 </div> <br>
                 <div class="form3 font-bold">
                     <label for="age">enter your age</label>
-                    <input type="number" id="age" required>
+                    <input type="number" id="Age" required>
                 </div> <br>
                 <div class="form4 font-bold">
                     <label for="uemail">enter your email</label>
@@ -59,5 +58,6 @@
             </button>
     </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
